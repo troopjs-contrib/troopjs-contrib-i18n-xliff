@@ -5,7 +5,7 @@ define([
 ], function (Gadget, hub, $) {
 	return Gadget.extend(function (url) {
 		var me = this;
-		var translations = {};
+		var dictionary = {};
 
 		me.on("sig/start", function () {
 			return hub
@@ -17,13 +17,13 @@ define([
 					$(data).find("unit[id]").each(function (index, unit) {
 						var $unit = $(unit);
 
-						translations[$unit.attr("id")] = $unit.find("segment target").text();
+						dictionary[$unit.attr("id")] = $unit.find("segment target").text();
 					});
 				});
 		});
 
 		me.on("hub/i18n/fetch", function (key) {
-			return [ key, translations[key] ];
+			return [ key, dictionary[key] ];
 		});
 	});
 });
