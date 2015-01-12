@@ -1,0 +1,23 @@
+{
+  "name": "troopjs-contrib-i18n-xliff",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "troopjs-core": "^5.1",
+    "jquery": ">=1.8.1 <4"
+  },
+  "devDependencies": {
+    "troopjs-ajax": "master",
+    "troopjs-i18n-widget": "master",
+    "requirejs": "~2.1"
+  }
+}
