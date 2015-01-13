@@ -22,7 +22,7 @@ define([
 				});
 		});
 
-		me.on("hub/i18n/fetch", function (key) {
+		me.on("hub/l10n/fetch", function (key) {
 			return [ key, dictionary[key] ];
 		});
 	});

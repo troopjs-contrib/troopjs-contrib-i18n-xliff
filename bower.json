@@ -1,5 +1,5 @@
 {
-  "name": "troopjs-contrib-i18n-xliff",
+  "name": "troopjs-contrib-l10n-xliff",
   "moduleType": [
     "amd"
   ],
@@ -16,8 +16,6 @@
     "jquery": ">=1.8.1 <4"
   },
   "devDependencies": {
-    "troopjs-ajax": "master",
-    "troopjs-i18n-widget": "master",
     "requirejs": "~2.1"
   }
 }

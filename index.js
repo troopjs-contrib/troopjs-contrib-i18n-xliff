@@ -5,7 +5,7 @@ require.config({
 		"location": "jquery/dist",
 		"main": "jquery"
 	}, {
-		"name": "troopjs-contrib-i18n-xliff",
+		"name": "troopjs-contrib-l10n-xliff",
 		"location": ".."
 	}],
 	"deps": [ "jquery", "require", "troopjs/main", "troopjs-widget/main" ],
@@ -13,11 +13,11 @@ require.config({
 		localRequire([
 			"troopjs-widget/application",
 			"troopjs-ajax/service",
-			"troopjs-i18n/service",
-			"troopjs-contrib-i18n-xliff/2.0/service"
-		], function (Application, AjaxService, I18NService, XLIFFService) {
+			"troopjs-l10n/service",
+			"troopjs-contrib-l10n-xliff/2.0/service"
+		], function (Application, AjaxService, L10NService, XLIFFService) {
 			jQuery(function ($) {
-				Application($("html"), "application", AjaxService(), I18NService(), XLIFFService("2.0/xliff.xml")).start();
+				Application($("html"), "application", AjaxService(), L10NService(), XLIFFService("2.0/xliff.xml")).start();
 			});
 		});
 	}
